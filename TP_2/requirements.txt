@@ -1,0 +1,7 @@
+# Entorno para correr TP_2/TP-clasificacion-AA1.ipynb (probado con Python 3.10 en Windows).
+# PyCaret 3.3.2 instala versiones anteriores de pandas, numpy, scikit-learn y matplotlib.
+# LightGBM queda en 4.5.0: con 4.7.0 el entrenamiento falla en Windows y PyCaret lo descarta sin avisar.
+pycaret==3.3.2
+shap==0.49.1
+lightgbm==4.5.0
+ipykernel

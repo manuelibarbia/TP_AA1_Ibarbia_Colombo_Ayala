@@ -1,11 +1,11 @@
-# TP_AA1_Ibarbia_Colombo_Ayala
+# AA1-TUIA-Ibarbia-Colombo-Ayala
 
 Repositorio para los Trabajos Prácticos obligatorios de la materia Aprendizaje Automático I (FCEIA - UNR, 2026 C2).
 
 ## Estructura del repositorio
 
 ```
-TP_AA1_Ibarbia_Colombo_Ayala/
+AA1-TUIA-Ibarbia-Colombo-Ayala/
 ├── house-prices-tp.csv                        # Dataset del TP 1
 ├── weatherAUS_2026C2.csv                      # Dataset del TP 2
 ├── 2026C2 - TrabajoPrácticoClasificacionAA1.pdf   # Enunciado del TP 2

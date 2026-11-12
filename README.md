@@ -1,16 +1,19 @@
 # TP_AA1_Ibarbia_Colombo_Ayala
 
-Repositorio para los Trabajos Prácticos obligatorios de la materia Aprendizaje Automático I (FIUBA - 2026 C2).
+Repositorio para los Trabajos Prácticos obligatorios de la materia Aprendizaje Automático I (FCEIA - UNR, 2026 C2).
 
 ## Estructura del repositorio
 
 ```
 TP_AA1_Ibarbia_Colombo_Ayala/
-├── house-prices-tp.csv       # Dataset del TP 1
+├── house-prices-tp.csv                        # Dataset del TP 1
+├── weatherAUS_2026C2.csv                      # Dataset del TP 2
+├── 2026C2 - TrabajoPrácticoClasificacionAA1.pdf   # Enunciado del TP 2
 ├── TP_1/
-│   └── TP-regresion-AA1.ipynb   # Trabajo Práctico 1: Regresión Lineal
+│   └── TP-regresion-AA1.ipynb                 # Trabajo Práctico 1: Regresión Lineal
 └── TP_2/
-    └── TP-clasificacion-AA1.ipynb   # Trabajo Práctico 2: Clasificación
+    ├── TP-clasificacion-AA1.ipynb             # Trabajo Práctico 2: Clasificación
+    └── requirements.txt                       # Entorno para correr el notebook del TP 2
 ```
 
 ## Cómo correr los notebooks
@@ -22,6 +25,17 @@ Es necesario tener instalado **Python 3.8+** y los siguientes paquetes:
 ```bash
 python -m pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 ```
+
+### Entorno del TP 2
+
+El notebook del TP 2 usa PyCaret 3.3.2, que solo funciona con Python 3.9 a 3.11 y necesita versiones anteriores de pandas, numpy y scikit-learn. Por eso se corre en un entorno aparte, con las versiones fijadas en `TP_2/requirements.txt`. Conviene crear el entorno en una ruta corta y fuera del repositorio: en Windows, las rutas largas hacen fallar la instalación.
+
+```bash
+py -3.10 -m venv C:\venvs\tp-aa1
+C:\venvs\tp-aa1\Scripts\python.exe -m pip install -r TP_2/requirements.txt
+```
+
+Después hay que elegir `C:\venvs\tp-aa1\Scripts\python.exe` como kernel del notebook en VS Code. Se puede usar cualquier otra ruta corta, por ejemplo en el disco D.
 
 ### Opción A: Ejecutar con VSCode (recomendado)
 
